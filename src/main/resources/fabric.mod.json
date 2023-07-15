@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "meme-chat",
+  "id": "plus_one",
   "version": "${version}",
-
-  "name": "Meme Chat",
-  "description": "Send meme images in minecraft chat!",
+  "name": "Plus One",
+  "description": "Click a message in game chat to repeat.",
   "authors": [
     "ZhuRuoLing"
   ],
@@ -12,18 +11,11 @@
     "sources": "https://github.com/ZhuRuoLing/meme-chat"
   },
 
-  "license": "CC0-1.0",
+  "license": "WTFPL",
   "icon": "assets/modid/icon.png",
-
-  "environment": "*",
-  "entrypoints": {
-    "server": [
-      "net.zhuruoling.memechat.MemeChatServer"
-    ],
-    "client": [
-      "net.zhuruoling.memechat.MemeChatClient"
-    ]
-  },
+  "accessWidener" : "memechat.accesswidener",
+  "environment": "client",
+  "entrypoints": {},
   "mixins": [
     "memechat.mixins.json"
   ],
